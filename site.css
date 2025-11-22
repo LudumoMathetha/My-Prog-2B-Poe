@@ -1,0 +1,77 @@
+/* Sukuna's-world theme: deep purple, blood red, gold accent */
+:root {
+    --sukuna-bg: #12020f; /* very dark purple/black */
+    --sukuna-panel: #2B0A3D; /* deep purple */
+    --sukuna-accent: #A40000; /* blood red */
+    --sukuna-gold: #D4AF37; /* gold accent */
+    --sukuna-text: #EDE7F0; /* light text */
+    --sukuna-muted: #B9A6B8; /* muted text */
+}
+
+body {
+    background: linear-gradient(180deg, var(--sukuna-bg) 0%, #1a0716 100%);
+    color: var(--sukuna-text);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.navbar, .navbar-brand, .navbar-nav .nav-link {
+    background: transparent;
+    color: var(--sukuna-text) !important;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(212,175,55,0.07);
+}
+
+/* Panels / cards */
+.card {
+    background: linear-gradient(180deg, rgba(43,10,61,0.95), rgba(18,2,15,0.95));
+    border: 1px solid rgba(164,0,0,0.12);
+    color: var(--sukuna-text);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+/* Buttons */
+.btn-sukuna {
+    background: linear-gradient(90deg, var(--sukuna-accent), #650000);
+    color: white;
+    border: none;
+    box-shadow: 0 3px 8px rgba(164,0,0,0.25);
+}
+
+    .btn-sukuna:hover {
+        opacity: .95;
+    }
+
+/* Accent (gold) */
+.text-gold {
+    color: var(--sukuna-gold) !important;
+}
+
+/* Tables */
+.table thead th {
+    background: rgba(43,10,61,0.8);
+    color: var(--sukuna-text);
+    border-bottom: 1px solid rgba(164,0,0,0.08);
+}
+
+.table tbody tr td {
+    background: transparent;
+    color: var(--sukuna-text);
+}
+
+/* small helpers */
+.badge-pending {
+    background: #8a2b5b;
+    color: white;
+}
+
+.badge-approved {
+    background: #1f7a2e;
+    color: white;
+}
+
+.badge-rejected {
+    background: #7a1212;
+    color: white;
+}
